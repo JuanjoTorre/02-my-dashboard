@@ -1,0 +1,33 @@
+DOCUMENTACION DEL CURSO DE NEXTjs ***01-my-dashboard***
+
+**INSTALACION
+Video 36
+      -Crear una carpeta con el nombre del curso "NextJs"
+      -Abrirla en una terminal
+      -npx create-next-app@latest
+      -Introducir el nombre de la carpeta del proyecto "my-dashboard"
+      -Yes, use recommended defaults
+      -Cambiar el nombre a la carpeta por "02-my-dashboard"
+      -Abrir la carpeta en VSCODE
+      -npm run dev (para ejecutar el proyecto en desarrollo)
+      -Asegurarse que NextJs se ejecute con Turbopack
+      -Para abrir la pagina del proyecto ir a http://localhost:3000
+
+**GIT Y GITHUB
+ -Para guardar un commit en git
+            - git init
+            - git add .
+            - git commit -m "Explicacion del commit"
+      -Para subir el proyecto a gitHub
+            -Tener una cuenta en gitHub
+            - Crear un repositorio en gitHub
+            - Darle un nombre '01-first-steps'
+            - git init 
+            - git add .
+            - git commit -m "Explicacion del commit"
+            - git remote add origin https://github.com/JuanjoTorre/01-first-steps.git
+            - git branch -M main
+            - git push -u origin main
+            Estos comandos son para inicializar el repositorio
+            Para guardar los cambios cambiar los tres ultimos comandos por
+            - git push
