@@ -31,3 +31,14 @@ Video 36
             Estos comandos son para inicializar el repositorio
             Para guardar los cambios cambiar los tres ultimos comandos por
             - git push
+
+**IMAGE
+Video 39
+      NextJs tiene un componente especial para la gestion de imagenes que se llama <Image/> que se importa desde 'next/image'.
+      Es muy configurable y se explica en 'https://nextjs.org/docs/app/api-reference/components/image'
+
+**ICONOS
+Video 40
+      Existe una libreria de iconos muy util que se llama react-icons cuya pagina oficial es 'https://react-icons.github.io/react-icons/'.
+      Para instalarla : npm install react-icons --save
+      
