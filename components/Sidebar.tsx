@@ -1,7 +1,15 @@
 // COMPONENTE DEL SIDEBAR
+
+import {
+	IoBrowsersOutline,
+	IoCalculator,
+	IoFootball,
+	IoLogoReact,
+} from "react-icons/io5";
 import Image from "next/image";
-import { IoBrowsersOutline, IoCalculator, IoLogoReact } from "react-icons/io5";
 import { SidebarMenuItem } from "./SidebarMenuItem";
+
+// Arreglo donde iran los datos de cada una de las pestañas del sidebar
 const menuItems = [
 	{
 		path: "/dashboard/main",
@@ -15,6 +23,12 @@ const menuItems = [
 		title: "Counter",
 		subTitle: "Contadot Client Side",
 	},
+	{
+		path: "/dashboard/pokemons",
+		icon: <IoFootball size={30} />,
+		title: "Pokemons",
+		subTitle: "Generación Estática",
+	},
 ];
 
 export const Sidebar = () => {
@@ -22,7 +36,7 @@ export const Sidebar = () => {
 		<div
 			id="menu"
 			style={{ width: "400px" }}
-			className="bg-gray-900 min-h-screen z-10 text-slate-300 w-64 left-0 h-screen overflow-y-scroll"
+			className="bg-gray-900 min-h-screen z-10 text-slate-300 w-64 left-0 overflow-y-scroll"
 		>
 			<div id="logo" className="my-4 px-6">
 				<h1 className=" flex items-center text-lg md:text-2xl font-bold text-white">
@@ -47,6 +61,7 @@ export const Sidebar = () => {
 							width={50}
 							height={50}
 							alt=""
+							priority
 						/>
 					</span>
 					<span className="text-sm md:text-base font-bold">
@@ -54,6 +69,7 @@ export const Sidebar = () => {
 					</span>
 				</a>
 			</div>
+			{/* Construimos las pestañas del sidebar de manera dinamica */}
 			<div id="nav" className="w-full px-6">
 				{menuItems.map((item) => (
 					<SidebarMenuItem key={item.path} {...item} />

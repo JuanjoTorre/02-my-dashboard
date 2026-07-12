@@ -1,5 +1,6 @@
 "use client";
-
+// COMPONENTE DE CADA  PESTAÑA DEL SIDEBAR
+// ES UN 'CLIENT COMPONENT' YA QUE NECESITA USAR DATOS DEL LADO DEL CLIENTE
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { JSX } from "react/jsx-runtime";

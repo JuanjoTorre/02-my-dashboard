@@ -1,5 +1,5 @@
 "use client";
-
+// CLIENT COMPONENT DEL CONTADOR
 import { useState } from "react";
 
 interface Props {
